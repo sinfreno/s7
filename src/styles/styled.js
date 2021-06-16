@@ -8,3 +8,12 @@ export const Container = styled.div`
     margin:auto;
     margin-top: 50px;
 `;
+
+export const Btn = styled.button`
+    background-color: lightblue;
+    color: black;
+    width: 50%;
+    &:hover {
+        background-color: paleGreen
+    }
+`;
