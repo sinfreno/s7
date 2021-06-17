@@ -1,22 +1,16 @@
 import React from 'react';
 
-export const Position = (props) => {
-
-    let num = (props.value);
-    
-}
 
 const Linia = (props) => {
-
-    return (
-    <div>
-        <h2>{props.value}</h2>
-    </div>
-    )
-        
+    const contador = props.cont;
+    const linias = props.count;
+  if (contador == linias) {
+    return <h1 style={{
+        backgroundColor: 'blue'}}>{props.value}</h1>;
+  }
+  return <p>{props.value}</p>;
 }
 
-console.log(num);
 
   export default Linia;
 

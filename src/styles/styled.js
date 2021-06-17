@@ -17,3 +17,7 @@ export const Btn = styled.button`
         background-color: paleGreen
     }
 `;
+
+export const Actual = styled.p`
+    background-color: green;
+`;

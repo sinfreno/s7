@@ -16,16 +16,13 @@ import {Container, Btn} from './styles/styled'
       setCount(0);
     }
 
-    const envio = (count) => <Position value={count} />
-
-    const linias = Obra.map((e ) => <Linia value={e} key={e.id}/> );
+    const linias = Obra.map((linia, i ) => <Linia value={linia} key={i} count={count} cont={i}/> );
   
     return (
       <div>
         <Container>
         <Btn onClick={() => setCount(count - 1)}>Anterior</Btn>
         <Btn onClick={() => setCount(count + 1)}>Siguiente</Btn>
-        {<p>{Obra[count]}</p>}
         {linias}
         </Container>
       </div>
